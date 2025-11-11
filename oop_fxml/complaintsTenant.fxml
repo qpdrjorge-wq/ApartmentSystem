@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #F3F8F2;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_javafx.complaintsTenantController">
+    <children>
+        <Label layoutX="183.0" layoutY="72.0" style="-fx-font-weight: bold;" text="COMPLAINTS">
+            <font>
+                <Font size="50.0" />
+            </font>
+        </Label>
+        <Line endX="800.0" endY="-1.52587890625E-5" layoutX="437.0" layoutY="142.0" startX="-250.0" />
+        <Line endX="800.0" endY="-1.52587890625E-5" layoutX="440.0" layoutY="399.0" startX="-250.0" />
+      <AnchorPane layoutX="636.0" layoutY="166.0" prefHeight="210.0" prefWidth="429.0" style="-fx-background-color: #D3E2CD; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="26.0" layoutY="23.0" style="-fx-font-weight: bold;" text="Pending:" textAlignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="133.0" style="-fx-font-weight: bold;" text="Completed:" textAlignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Line endX="968.666748046875" endY="-3.0517578125E-5" layoutX="-569.0" layoutY="105.0" startX="594.888916015625" startY="-3.0517578125E-5" />
+            <Label layoutX="234.0" layoutY="23.0" style="-fx-font-weight: bold;" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="234.0" layoutY="133.0" style="-fx-font-weight: bold;" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="19.05" offsetY="5.0" radius="6.7625" width="10.0">
+               <color>
+                  <Color red="0.4399999976158142" green="0.4092000126838684" blue="0.4092000126838684" opacity="0.9568527936935425" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="178.0" layoutY="415.0" prefHeight="364.0" prefWidth="1060.0" style="-fx-background-color: #F3F8F2; -fx-background-radius: 10;">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" offsetY="1.0">
+               <color>
+                  <Color red="0.5701754093170166" green="0.5261804461479187" blue="0.5261804461479187" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <children>
+            <AnchorPane layoutX="8.0" layoutY="11.0" prefHeight="150.0" prefWidth="873.0" style="-fx-background-color: #EAF4F4; -fx-background-radius: 10;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" offsetY="1.0">
+                     <color>
+                        <Color red="0.5701754093170166" green="0.5261804461479187" blue="0.5261804461479187" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+               <children>
+                  <Label layoutX="17.0" layoutY="13.0" style="-fx-font-weight: bold;" text="Rodent Problem" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="782.0" layoutY="108.0" prefHeight="36.0" prefWidth="89.0" style="-fx-font-weight: bold;" text="Status:" textAlignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="880.0" layoutY="108.0" prefHeight="36.0" prefWidth="131.0" style="-fx-text-fill: #E86F12;" text="Pending" textAlignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="24.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ung mataba niong daga kinain ung talong namin sa lamesa, wala man lang kayong ginagawa!!" wrappingWidth="557.731201171875">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="958.0" layoutY="13.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="44.0" style="-fx-background-color: #EAF4F4;">
+                     <graphic>
+                        <ImageView fitHeight="47.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/deleteIMG.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="22.0" layoutY="172.0" prefHeight="150.0" prefWidth="1030.0" style="-fx-background-color: #EAF4F4; -fx-background-radius: 10;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" offsetY="1.0">
+                     <color>
+                        <Color red="0.5701754093170166" green="0.5261804461479187" blue="0.5261804461479187" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+               <children>
+                  <Label layoutX="17.0" layoutY="13.0" style="-fx-font-weight: bold;" text="Inidoro Problem" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="782.0" layoutY="108.0" prefHeight="36.0" prefWidth="87.0" style="-fx-font-weight: bold;" text="Status:" textAlignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="880.0" layoutY="108.0" prefHeight="36.0" prefWidth="132.0" style="-fx-text-fill: #29A73E;" text="Completed" textAlignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="24.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ung inidoro dito barado lage e wala namang gumagamit, ung katabi kaseng Unit panay tae, anobato konektado ba tubo nila samen" wrappingWidth="557.731201171875">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="958.0" layoutY="13.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="44.0" style="-fx-background-color: #EAF4F4;">
+                     <graphic>
+                        <ImageView fitHeight="47.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/deleteIMG.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button layoutX="181.0" layoutY="188.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="303.0" style="-fx-background-radius: 20; -fx-background-color: #8BAC7D;">
+         <effect>
+            <DropShadow offsetY="8.0" radius="9.25" width="18.0">
+               <color>
+                  <Color red="0.42105263471603394" green="0.4093567132949829" blue="0.4093567132949829" opacity="0.7799999713897705" />
+               </color>
+            </DropShadow>
+         </effect>
+         <graphic>
+            <Label prefHeight="72.0" prefWidth="236.0" style="-fx-font-weight: bold;" text="CREATE" textAlignment="CENTER">
+               <font>
+                  <Font size="37.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="72.0" fitWidth="157.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/addIMG.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </graphic>
+      </Button>
+      <AnchorPane layoutX="-1.0" layoutY="11.0" prefHeight="800.0" prefWidth="100.0" style="-fx-background-color: #E0EDDB;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="burger1" layoutX="10.0" layoutY="5.0" mnemonicParsing="false" onAction="#toggleDrawer" prefHeight="60.0" prefWidth="48.0">
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="60.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/burger.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="drawerPane" layoutX="7.0" layoutY="37.0" prefHeight="800.0" prefWidth="205.0" style="-fx-background-color: #E0EDDB;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="10.0" layoutY="106.0" style="-fx-font-weight: bold; -fx-text-fill: #3F473A;" text="Welcome User">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="152.0" prefHeight="47.0" prefWidth="171.0" style="-fx-font-weight: bold; -fx-text-fill: #3F473A;" text="Username!">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Button fx:id="menuButton" layoutX="10.0" layoutY="5.0" mnemonicParsing="false" onAction="#toggleDrawer" prefHeight="60.0" prefWidth="48.0">
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="60.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/burger.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="10.0" layoutY="724.0" mnemonicParsing="false" onAction="#logoutButton" prefHeight="61.0" prefWidth="185.0" text="Log Out">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Button>
+            <VBox layoutY="210.0" prefHeight="465.0" prefWidth="257.0" spacing="5.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#dashboardButton" prefHeight="61.0" prefWidth="260.0" style="-fx-background-color: #E0EDDB;" text="Dashboard">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#paymentMethodButton" prefHeight="61.0" prefWidth="260.0" style="-fx-background-color: #E0EDDB;" text="Payment Method">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="61.0" prefWidth="260.0" style="-fx-background-color: #E0EDDB;" text="Complaint">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#apartmentLeaseButton" prefHeight="61.0" prefWidth="260.0" style="-fx-background-color: #E0EDDB;" text="Apartment Lease">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#PaymentHistoryButton" prefHeight="61.0" prefWidth="260.0" style="-fx-background-color: #E0EDDB;" text="Payment History">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#HelpNSupportButton" prefHeight="61.0" prefWidth="260.0" style="-fx-background-color: #E0EDDB;" text="Help &amp; Support">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#ContactNAboutButton" prefHeight="61.0" prefWidth="260.0" style="-fx-background-color: #E0EDDB;" text="Contact &amp; About">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

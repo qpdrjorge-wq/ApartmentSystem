@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="drawerPane" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.oop_javafx.DrawerController"
+            prefWidth="205.0" prefHeight="800.0"
+            style="-fx-background-color: #E0EDDB;">
+
+    <children>
+        <Label layoutX="10.0" layoutY="106.0"
+               style="-fx-font-weight: bold; -fx-text-fill: #3F473A;"
+               text="Welcome User">
+            <font><Font size="32.0"/></font>
+        </Label>
+
+        <Label fx:id="usernameLabel" layoutX="10.0" layoutY="152.0"
+               prefHeight="47.0" prefWidth="225.0"
+               style="-fx-font-weight: bold; -fx-text-fill: #3F473A;">
+            <font><Font size="32.0"/></font>
+        </Label>
+
+        <Button fx:id="menuButton" layoutX="10.0" layoutY="5.0"
+                mnemonicParsing="false" onAction="#toggleDrawer"
+                prefHeight="60.0" prefWidth="48.0">
+            <graphic>
+                <ImageView fitHeight="60.0" fitWidth="48.0" preserveRatio="true">
+                    <image><Image url="@../../../images/burger.png" /></image>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Button layoutX="10.0" layoutY="724.0"
+                mnemonicParsing="false" onAction="#logoutButton"
+                prefHeight="61.0" prefWidth="185.0"
+                text="Log Out">
+            <font><Font name="System Bold" size="27.0"/></font>
+        </Button>
+
+        <VBox layoutY="210.0" prefHeight="465.0" prefWidth="257.0" spacing="5.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#dashboardButton"
+                        prefHeight="61.0" prefWidth="260.0"
+                        style="-fx-background-color: #E0EDDB;" text="Dashboard">
+                    <font><Font name="System Bold" size="27.0"/></font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#paymentMethodButton"
+                        prefHeight="61.0" prefWidth="260.0"
+                        style="-fx-background-color: #E0EDDB;" text="Payment Method">
+                    <font><Font name="System Bold" size="27.0"/></font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#complaintsTenantButton"
+                        prefHeight="61.0" prefWidth="260.0"
+                        style="-fx-background-color: #E0EDDB;" text="Complaint">
+                    <font><Font name="System Bold" size="27.0"/></font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#apartmentLeaseButton"
+                        prefHeight="61.0" prefWidth="260.0"
+                        style="-fx-background-color: #E0EDDB;" text="Apartment Lease">
+                    <font><Font name="System Bold" size="27.0"/></font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#PaymentHistoryButton"
+                        prefHeight="61.0" prefWidth="260.0"
+                        style="-fx-background-color: #E0EDDB;" text="Payment History">
+                    <font><Font name="System Bold" size="27.0"/></font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#HelpNSupportButton"
+                        prefHeight="61.0" prefWidth="260.0"
+                        style="-fx-background-color: #E0EDDB;" text="Help &amp; Support">
+                    <font><Font name="System Bold" size="27.0"/></font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#ContactNAboutButton"
+                        prefHeight="61.0" prefWidth="260.0"
+                        style="-fx-background-color: #E0EDDB;" text="Contact &amp; About">
+                    <font><Font name="System Bold" size="27.0"/></font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
