@@ -20,7 +20,7 @@
    <Line endX="800.0" endY="-1.52587890625E-5" layoutX="447.0" layoutY="142.0" startX="-250.0" />
 
     <!-- TableView -->
-    <TableView fx:id="paymentTable" layoutX="271.0" layoutY="161.0" prefHeight="589.0" prefWidth="991.0">
+    <TableView fx:id="paymentTable" layoutX="210.0" layoutY="165.0" prefHeight="589.0" prefWidth="991.0">
         <columns>
             <TableColumn fx:id="dateColumn" prefWidth="300" style="-fx-font-size: 23;" text="Date" />
             <TableColumn fx:id="amountColumn" prefWidth="400" style="-fx-font-size: 23;" text="Amount Paid" />
